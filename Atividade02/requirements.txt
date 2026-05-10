@@ -6,11 +6,16 @@ anyio==4.12.1
 asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1733250440834/work
 astunparse==1.6.3
 backoff==2.2.1
+beautifulsoup4==4.14.3
+catboost==1.2.10
 certifi==2026.4.22
 charset-normalizer==3.4.7
 click==8.1.8
 colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
 comm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work
+contourpy==1.3.0
+cycler==0.12.1
+db-dtypes==1.6.0
 debugpy @ file:///D:/bld/bld/rattler-build_debugpy_1754523437/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work
 distro==1.9.0
@@ -20,9 +25,12 @@ exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongrou
 executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1745502089858/work
 filelock==3.19.1
 flatbuffers==25.12.19
+fonttools==4.60.2
 fsspec==2025.10.0
 gast==0.7.0
+gdown==5.2.2
 google-pasta==0.2.0
+graphviz==0.21
 grpcio==1.80.0
 h11==0.16.0
 h2==4.3.0
@@ -35,6 +43,7 @@ huggingface_hub==1.8.0
 hyperframe==6.1.0
 idna==3.13
 importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work
+importlib_resources==6.5.2
 ipykernel @ file:///D:/bld/ipykernel_1754352877088/work
 ipython @ file:///D:/bld/ipython_1701831845989/work
 jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work
@@ -44,16 +53,19 @@ joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1748019130050/
 jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1733440914442/work
 jupyter_core @ file:///D:/bld/jupyter_core_1748333031907/work
 keras==3.10.0
+kiwisolver==1.4.7
 libclang==18.1.1
 lightgbm==4.6.0
 Markdown==3.9
 markdown-it-py==3.0.0
 MarkupSafe==3.0.3
+matplotlib==3.9.4
 matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1733416936468/work
 mdurl==0.1.2
 ml_dtypes==0.5.4
 mpmath==1.3.0
 namex==0.1.0
+narwhals==2.21.0
 nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work
 networkx==3.2.1
 numpy @ file:///D:/bld/numpy_1732314314278/work/dist/numpy-2.0.2-cp39-cp39-win_amd64.whl#sha256=8824ea87142626db7bbf79bdbcbd5b3a2fd77d7570bd62b4f705100e42b651e1
@@ -68,15 +80,19 @@ password-strength==0.0.3.post2
 pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1733327343728/work
 pillow==11.3.0
 platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1746710438/work
+plotly==6.7.0
 posthog==6.9.3
 prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1744724089886/work
 protobuf==6.33.6
 psutil @ file:///D:/bld/psutil_1740663155517/work
 pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work
+pyarrow==21.0.0
 pydantic==2.13.4
 pydantic-settings==2.11.0
 pydantic_core==2.46.4
 Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+pyparsing==3.3.2
+PySocks==1.7.1
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
 python-dotenv==1.2.1
 pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work
@@ -89,6 +105,7 @@ scikit-learn @ file:///D:/bld/scikit-learn_1736496793625/work/dist/scikit_learn-
 scipy @ file:///C:/bld/scipy-split_1716470385682/work/dist/scipy-1.13.1-cp39-cp39-win_amd64.whl#sha256=490e922ef930c40e74290d95915a98295b9059d02849059317bab82ba7810581
 shellingham==1.5.4
 six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+soupsieve==2.8.3
 sseclient-py==1.8.0
 stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work
 sympy==1.14.0
