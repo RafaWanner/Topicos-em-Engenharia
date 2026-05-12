@@ -160,17 +160,17 @@ def gain (data_x, gain_parameters):
     batch_idx = sample_batch_index(no, batch_size)
     X_mb = norm_data_x[batch_idx, :]  
     M_mb = data_m[batch_idx, :]  
-    # Sample random vectors  
-    Z_mb = uniform_sampler(0, 0.01, batch_size, dim) 
+    
     # Sample hint vectors
-    H_mb_temp = binary_sampler(hint_rate, batch_size, dim)
+    H_mb_temp = binary_sampler(hint_rate, M_mb.shape[0], dim)
     H_mb = M_mb * H_mb_temp
-      
-    # Combine random vectors with observed vectors
+    
+    # Sample random vectors and combine with observed vectors
+    Z_mb = uniform_sampler(0, 0.01, M_mb.shape[0], dim)
     X_mb = M_mb * X_mb + (1-M_mb) * Z_mb 
-      
+    
     _, D_loss_curr = sess.run([D_solver, D_loss_temp], 
-                              feed_dict = {M: M_mb, X: X_mb, H: H_mb})
+      feed_dict = {M: M_mb, X: X_mb, H: H_mb})
     _, G_loss_curr, MSE_loss_curr = \
     sess.run([G_solver, G_loss_temp, MSE_loss],
              feed_dict = {X: X_mb, M: M_mb, H: H_mb})
