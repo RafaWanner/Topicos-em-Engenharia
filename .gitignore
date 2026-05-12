@@ -3,4 +3,4 @@ venv
 Atividade02/data
 __pycache__/
 # CatBoost temporary files
-Atividade02/catboost_info
+Atividade02/catboost_info/
